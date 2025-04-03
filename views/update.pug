@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/style.css")
+        title= title
+    body
+        h1 Update Contact
+        form(action="/update-cobj" method="POST")
+            label(for="project_name") Project Name:
+            input(type="text" name="project_name" required)
+
+            label(for="client_name") Client Name:
+            input(type="text" name="client_name" required)
+
+            label(for="email") Email:
+            input(type="email" name="email" required)
+
+            input(type="submit" value="Submit")
+
+        br
+        a(href="/") Return to the homepage
